@@ -1,0 +1,54 @@
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    .hole {
+        width: 28%;
+        margin: 15px 9px;
+        height: 17%;
+    }
+    .item-container{
+        flex-direction: column;
+        align-items: center;
+        height: 84%;
+    }
+    #keo, #bua, #bao{
+        width: 60%;
+        height: 30%;
+    }
+}
+@media (max-width: 740px)
+{
+    .main-contain-mouse{
+        flex-direction: column;
+    }
+    .table{
+        width: 40%;
+        display: inline-flex;
+    }
+    .time{
+        padding: 8px 44px;
+    }
+    .container-mouse{
+        width: 100%;
+    }
+    .hole {
+        width: 28%;
+        margin: 15px 9px;
+        height: 14%;
+    }
+    .item-container{
+        flex-direction: column;
+        align-items: center;
+        height: 84%;
+    }
+    #keo, #bua, #bao{
+        width: 60%;
+        height: 30%;
+    }
+    #me > h2, #enemy > h2{
+        font-size: 16px;
+    }
+    #me > img, #enemy > img{
+        width: 100%;
+        height: 200px;
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS NUMBER</title>
+    <link rel="stylesheet" href="assest/style.css">
+    <link rel="stylesheet" href="assest/main.js">
+    <link rel="stylesheet" href="assest/sound/congrats.mp3">
+    <link rel="stylesheet" href="/index.html">
+    <link rel="stylesheet" href="assest/responsive.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="main-menu">
+            <a href="index.html">Main Menu</a>
+        </div>
+        <div class="container">
+            <h1>GUESS A NUMBER GAME</h1>
+            <p id="mess">Guess a number between 1 and 1000</p>
+            <div>
+                <input type="number" id="number-input" placeholder="Type a number between 1 and 100">
+                <button onclick="check()">Submit</button>
+            </div>
+            <button onclick="selectLevel()" id="newGame">New Game</button>
+        </div>
+        <script src="assest/main.js"></script>
+    </div>
+    <div id="select">
+        <div onclick="de()" class="de select-items">Easy</div>
+        <div onclick="tb()" class="tb select-items">Medium</div>
+        <div onclick="kho()" class="kho select-items">Hard</div>
+    </div>
+    <audio id="audio" style="display: none;">
+        <source  src="assest/sound/congrats.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

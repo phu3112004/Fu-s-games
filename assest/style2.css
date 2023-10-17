@@ -1,0 +1,132 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.start{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/deoyux1-d72ca079-9b11-490c-a194-108bb8dda821.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGVveXV4MS1kNzJjYTA3OS05YjExLTQ5MGMtYTE5NC0xMDhiYjhkZGE4MjEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fSk9XccLgEJHjeTQfGWG6_5fX6QEmYdf8Iyi_0m84PU');
+    background-position: center;
+    background-size: cover;
+}
+#start-game {
+    padding: 32px 108px;
+    font-size: 44px;
+    background-image: url('https://cdn.nguyenkimmall.com/images/detailed/725/co-gi-tren-tivi-top-15-anime-hay-xung-tam-huyen-thoai-thumbnail.jpg');
+    border-radius: 24px;
+    color: rgb(232, 255, 232);
+    background-position: center;
+    background-size: cover;
+    text-shadow: #000 2px 2px;
+    cursor: pointer;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/deoyux1-d72ca079-9b11-490c-a194-108bb8dda821.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGVveXV4MS1kNzJjYTA3OS05YjExLTQ5MGMtYTE5NC0xMDhiYjhkZGE4MjEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fSk9XccLgEJHjeTQfGWG6_5fX6QEmYdf8Iyi_0m84PU');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main-menu{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-image: url('https://cdn.popsww.com/blog/sites/2/2022/03/anime-am-nhac-hay.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #000;
+    padding: 8px 8px;
+    border-radius: 8px;
+    z-index: 99;
+}
+.main-menu > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.container{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.hole{
+    width: 23%;
+    margin: 15px 9px;
+    height: 28%;
+    border-radius: 109px;
+    background-image: url('https://png.pngtree.com/png-vector/20230209/ourmid/pngtree-lake-clipart-png-image_6594097.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-color: #ffffff10;
+}
+.jerry{
+    width: 70%;
+    height: 70%;
+    display: none;
+}
+.jerry.punched{
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/801/325/small/punch-comic-explosion-with-red-and-yellow-colors-fighting-text-comic-blast-with-clouds-and-stars-text-bubbles-for-cartoons-free-png.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#win{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #faffa76b;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: rgb(247, 255, 2);
+    display: none;
+}
+
+#new-game{
+    padding: 16px 16px;
+    cursor: pointer;
+    background-color: #b4db97;
+    border-radius: 16px;
+}
+.table{
+    width: 15%;
+}
+.time{
+    background-image: url('https://tienhiepphu.files.wordpress.com/2015/07/8589130419739-attack-on-titan-wallpaper-hd.jpg');
+    padding: 32px 48px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 24px;
+    display: flex;
+    width: 100%;
+}
+.score{
+    color: #8df499;
+    text-shadow: #5751ff 2px 2px;
+}

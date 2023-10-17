@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punch the Mouse</title>
+    <link rel="stylesheet" href="assest/style2.css">
+    <link rel="stylesheet" href="assest/main2.js">
+    <link rel="stylesheet" href="assest/responsive.css">
+
+</head>
+<body>
+    <div id="start-contain" class="start">
+        <button onclick="startGame()" id="start-game">Start</button>
+    </div>
+    <div id="main-contain" class="main main-contain-mouse">
+        <div class="main-menu">
+            <a href="index.html">Main Menu</a>
+        </div>
+        <div class="table">
+            <div class="time">
+                <span id="min">1</span>
+                <p>:</p>
+                <span id="sec">59</span>
+            </div>
+            <div class="score">
+                <h1>Score</h1>
+                <h2 id="score">0</h2>
+            </div>
+        </div>
+        
+        <div class="container container-mouse">
+            <div class="hole">
+                <img class="jerry" src="assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="/assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="/assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="/assest/img/jerry.png" alt="">
+            </div>
+            <div class="hole">
+                <img class="jerry" src="/assest/img/jerry.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="win">
+        <h1 id="win-mess"></h1>
+        <button onclick="newGame()" id="new-game">New Game</button>
+    </div>
+    <audio id="punch-sound" style="display: none;">
+        <source type="audio/mpeg" src="assest/sound/punch.mp3">
+    </audio>
+    <script src="assest/main2.js"></script>
+    <style>
+        html,body{
+            cursor:url("https://1.bp.blogspot.com/-qbWo9mPKO2Y/YL9utYdQBdI/AAAAAAAAFs4/mtjGu6u2uGwtJsT4gZG4lbhLV1a5lG6OQCLcBGAsYHQ/s0/mouse-f1.png"), auto;
+        }
+    </style>
+</body>
+</html>
