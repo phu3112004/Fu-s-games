@@ -1,21 +1,15 @@
 let items = [1, 2, 3];
+let randomIndex = Math.floor(Math.random() * 3);
+let severItem = items[randomIndex];
 let userItem;
+let kq;
 
 function clickKeo() {
     userItem = 1;
     document.getElementById('mess').innerText = 'Chose Scissors';
-    let kq = check(userItem, items);
     document.getElementById('me').innerHTML = '<h2>You chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14297-508x381.png" alt=""> '
+    kq = check(userItem, severItem);
     displayResult(kq);
-    if(kq === 1){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14297-508x381.png" alt=""> '
-    }
-    else if(kq ===0){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14296.png" alt=""> '
-    }
-    else if(kq===2){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14298-508x381.png" alt=""> '
-    }
 }
 
 function clickBua() {
@@ -23,39 +17,29 @@ function clickBua() {
     document.getElementById('mess').innerText = 'Chose Rock';
     let kq = check(userItem, items);
     document.getElementById('me').innerHTML = '<h2>You chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14296.png" alt=""> '
+    kq = check(userItem, severItem);
     displayResult(kq);
-    if(kq === 2){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14297-508x381.png" alt=""> '
-    }
-    else if(kq ===1){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14296.png" alt=""> '
-    }
-    else if(kq===0){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14298-508x381.png" alt=""> '
-    }
 }
-
 function clickBao() {
     userItem = 3;
     document.getElementById('mess').innerText = 'Chose Paper';
     let kq = check(userItem, items);
     document.getElementById('me').innerHTML = '<h2>You chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14298-508x381.png" alt=""> '
+    kq = check(userItem, severItem);
     displayResult(kq);
-    if(kq === 0){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14297-508x381.png" alt=""> '
-    }
-    else if(kq ===2){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14296.png" alt=""> '
-    }
-    else if(kq===1){
-        document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14298-508x381.png" alt=""> '
-    }
+    
 }
 
-function check(userItem, items) {
-    let randomIndex = Math.floor(Math.random() * 3);
-    let severItem = items[randomIndex];
-
+if(severItem === 1){
+    document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14297-508x381.png" alt=""> '
+}
+else if(severItem ===2){
+    document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2><img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14296.png" alt=""> '
+}
+else if(severItem===3){
+    document.getElementById('enemy').innerHTML = '<h2>Computer chose: </h2> <img src="https://illustcenter.com/wp-content/uploads/2022/05/rdesign_14298-508x381.png" alt=""> '
+}
+function check(userItem, severItem) {
     if (severItem === 3 && userItem === 1) {
         return 2;
     } else if (severItem === 1 && userItem === 3) {

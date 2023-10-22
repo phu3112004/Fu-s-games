@@ -20,10 +20,6 @@ function TimeRange()
         else{
             document.getElementById('sec').innerText = `${sec}`
         }
-        if(sec===0)
-        {
-            clearTimeout();
-        }
         TimeRange();
     },1000)
 }
